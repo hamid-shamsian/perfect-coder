@@ -23,7 +23,7 @@ const App = () => {
     <ThemeContext.Provider value={"dark"}>
       <UserContext.Provider value={{ user: user, onLogin: handleLogin, onLogout: handleLogout }}>
         <div className='bg-gray-600 h-screen'>
-          <Header user={user} onLogin={handleLogin} onLogout={handleLogout} />
+          <Header />
 
           <main className='flex justify-center items-center h-56 text-white'>Some Main Content...</main>
         </div>
